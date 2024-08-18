@@ -44,9 +44,9 @@ for _, orig_name in ipairs({
     minetest.register_craft({
         output = itemname .. " 8",
         recipe = {
-            { itemname, itemname, itemname },
-            { itemname, "",       itemname },
-            { itemname, itemname, itemname }
+            { "ethereal:" .. orig_name, "ethereal:" .. orig_name, "ethereal:" .. orig_name },
+            { "ethereal:" .. orig_name, "",                       "ethereal:" .. orig_name },
+            { "ethereal:" .. orig_name, "ethereal:" .. orig_name, "ethereal:" .. orig_name }
         }
     })
 end
